@@ -328,14 +328,14 @@ body.ie .ibg img {
   cursor: pointer;
 }
 .header__item-lk {
-  background: url("./../../img/icons/lk.svg") no-repeat;
+  background: url("./img/icons/lk.svg") no-repeat;
 }
 .header__item-favourites {
-  background: url("./../../img/icons/favourites.svg") no-repeat;
+  background: url("./img/icons/favourites.svg") no-repeat;
   width: 50px;
 }
 .header__item-basket {
-  background: url("./../../img/icons/cart.svg") no-repeat;
+  background: url("./img/icons/cart.svg") no-repeat;
 }
 .header__lk-menu-vertical {
   cursor: pointer;
