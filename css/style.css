@@ -328,7 +328,7 @@ body.ie .ibg img {
   cursor: pointer;
 }
 .header__item-lk {
-  background: url("../../img/icons/lk.svg") no-repeat;
+  background: url("./../img/icons/lk.svg") no-repeat;
 }
 .header__item-favourites {
   background: url("../../../img/icons/favourites.svg") no-repeat;
