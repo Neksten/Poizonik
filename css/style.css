@@ -1546,7 +1546,7 @@ body.ie .ibg img {
     margin: 0 auto 20px auto;
     max-width: 145px;
   }
-  .product__price {
+  .product__title, .product__price {
     text-align: center;
   }
 }
