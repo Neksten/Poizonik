@@ -100,12 +100,34 @@ function closeMenu() {
 }
 
 // Адаптивная картинка section "hero"
-if (screenWidth <= 992) {
-    document.querySelector('.best__image').src = './img/background/best-small.jpg'
-} 
-if (screenWidth > 2300) {
-    document.querySelector('.best__image').src = './img/background/best-big.jpg'
+if (!!document.querySelector('.best__image')) {
+    if (screenWidth <= 992) {
+        document.querySelector('.best__image').src = './img/background/best-small.jpg'
+    } 
+    if (screenWidth > 2300) {
+        document.querySelector('.best__image').src = './img/background/best-big.jpg'
+    }
+    
+}
+// Поставить agree в форму для скидки
+if (!!formDiscountCheckbox) {
+    formDiscountCheckbox.addEventListener('click', () => formDiscountCheckbox.classList.toggle('_active'))
 }
 
-// Поставить agree в форму для скидки
-formDiscountCheckbox.addEventListener('click', () => formDiscountCheckbox.classList.toggle('_active'))
+
+// Выбрать тип размерной сетки rus eu...
+const sizeProductInfoGrid = document.querySelector('.size-info-grid-product__sizes')
+sizeProductInfoGrid.querySelectorAll('i').forEach(size => {
+    size.addEventListener('click', function () {
+        activeLogic(sizeProductInfoGrid.querySelectorAll('i'))
+        size.classList.add('_active')
+    })
+})
+
+function activeLogic(array) {
+    array.forEach(item => {
+        if (item.classList.contains('_active')) {
+            item.classList.remove('_active')
+        }
+    })
+}

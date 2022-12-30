@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/iconsfont.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Poizonik</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="block-opacity"></div>
+        <header class="header lock-padding'">
+            <div class="header__location">
+                <div class="header__location-text">Москва</div>
+            </div>
+            <div class="header__container container">
+                <div class="header__content">
+                    <div class="menu__icon icon-menu">
+                        <img src="./img/icons/burger.svg" alt="">
+                    </div>
+                    <div class="header__content-left">
+                        <a href="./index.html" class="header__logo">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <div class="header__gender">
+                            <a href="#" class="header__man">Мужчинам</a>
+                            <a href="#" class="header__woman">Женщинам</a>
+                        </div>
+                    </div>
+                    <div class="header__items">
+                        <div class="header__search-box">
+                            <input class="header__search-txt" type="text" name="" placeholder="Поищем?">
+                            <a href="" class="header__search-btn">
+                                <img src="./img/icons/search.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header__item header__item-lk"></div>
+                        <div class="header__item header__item-favourites _icon-favourites"></div>
+                        <div class="header__item header__item-basket"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu menu">
+                <div class="header__menu-container container">
+                    <nav class="menu__body">
+                        <ul class="menu__list menu__list-left">
+                            <li class="menu__hero-item">
+                                <a href="./index.html" class="menu__link">На главную</a>
+                            </li>
+                            <li><div class="menu__link menu__link-green">Новинки</div></li>
+                            <li>
+                                <div class="menu__link menu__link-category">Обувь</div>
+                                <ul class="menu__list-submenu submenu">
+                                    <li><div class="submenu__link">Кроссовки</div></li>
+                                    <li><div class="submenu__link">Кеды</div></li>
+                                    <li><div class="submenu__link">Ботинки</div></li>
+                                </ul>
+                            </li>
+                            <li><div class="menu__link menu__link-category">Одежда</div></li>
+                            <li><div class="menu__link menu__link-category">Аксессуары</div></li>
+                            <li>
+                                <div class="menu__link menu__link-category">Бренды</div>
+                                <ul class="menu__list-submenu submenu">
+                                    <li><div class="submenu__link">New Balance</div></li>
+                                    <li><div class="submenu__link">Stone Island</div></li>
+                                    <li><div class="submenu__link">Supreme</div></li>
+                                    <li><div class="submenu__link">Adidas</div></li>
+                                    <li><div class="submenu__link">Jordan</div></li>
+                                    <li><div class="submenu__link">Nike</div></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="menu__list menu__list-right">
+                            <li><a href="" class="menu__link">О нас</a></li>
+                            <li><a href="" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__lk-menu-vertical">Личный кабинет</div>
+        </header>
+        <main class="page lock-padding'">
+            <section class="product">
+                <div class="product__container container">
+                    <div class="product__content">
+                        <div class="product-card">
+                            <!-- Главный контейнер слайдера-->
+                            <div class="product-slider swiper">
+                                <!-- обязательная оболочка -->
+                                <div class="product-slider__wrapper swiper-wrapper">
+                                    <!-- Слайды -->
+                                    <div class="product-slider__slide swiper-slide">
+                                        <!-- Контент внутри слайда -->
+                                        <div class="product-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-slider__slide swiper-slide">
+                                        <div class="product-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-slider__slide swiper-slide">
+                                        <div class="product-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-slider__slide swiper-slide">
+                                        <div class="product-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-slider__slide swiper-slide">
+                                        <div class="product-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Стрелки управления -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <!-- Миниатюры -->
+                            <div class="product-mini-slider swiper">
+                                <!-- обязательная оболочка -->
+                                <div class="product-mini-slider__wrapper swiper-wrapper">
+                                    <!-- Слайды -->
+                                    <div class="product-mini-slider__slide swiper-slide">
+                                        <!-- Контент внутри слайда -->
+                                        <div class="product-mini-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-mini-slider__slide swiper-slide">
+                                        <div class="product-mini-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-mini-slider__slide swiper-slide">
+                                        <div class="product-mini-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-mini-slider__slide swiper-slide">
+                                        <div class="product-mini-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="product-mini-slider__slide swiper-slide">
+                                        <div class="product-mini-slider__image">
+                                            <img src="./img/products/1.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <div class="product__title">Кроссовки Travis Scott x Nike Air Max 1 Saturn Gold</div>
+                            <div class="product__price"><i>34 990</i> руб.</div>
+                            <div class="product__size-info-grid size-info-grid-product">
+                                <div class="size-info-grid-product__title">
+                                    Выберите размер
+                                </div>
+                                <div class="size-info-grid-product__sizes"><i>EU</i> <i class="_active">RUS</i> <i>US</i> <i>UK</i> <i>СМ</i></div>
+                            </div>
+                            <div class="product__sizes">
+                                <div class="product__size">36</div>
+                                <div class="product__size">37</div>
+                                <div class="product__size">38</div>
+                                <div class="product__size">39</div>
+                                <div class="product__size">40</div>
+                                <div class="product__size">41</div>
+                                <div class="product__size">42</div>
+                                <div class="product__size">43</div>
+                                <div class="product__size">44</div>
+                                <div class="product__size">45</div>
+                                <div class="product__size">46</div>
+                            </div>
+                            <div class="product__size-info">
+                                <a href="#popup-size" class="product__size-info-table popup-link">Таблица размеров</a>
+                            </div>
+                            <div class="product__management">
+                                <a href="#popup-cart" class="product__add-cart popup-link">Добавить в корзину</a>
+                                <a href="" class="product__buy-now">Купить сейчас</a>
+                                <div class="product__favourites _icon-favourites"></div>
+                            </div>
+                            <ul class="product__specifications">
+                                <li class="product__item-specifications"><i>Артикул:</i> DO9392-700</li>
+                                <li class="product__item-specifications"><i>Бренд:</i> Nike</li>
+                                <li class="product__item-specifications"><i>Стиль:</i> Lifestyle</li>
+                                <li class="product__item-specifications"><i>Дата выпуска:</i> 27.05.2022</li>
+                                <li class="product__item-specifications"><i>Сезон:</i> Демисезон</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="description">
+                <div class="description__container container">
+                    <div class="description__content">
+                        <div class="description__title">Описание</div>
+                        <div class="description__text">
+                            <p>Nike Air Max&nbsp;1 Travis Scott Cactus Jack Saturn Gold (Найк Эйр Макс&nbsp;1 Трэвис Скотт Кактус Джек Сатурн Голд)&nbsp;&mdash; вторая расцветка знаменитых Эйр Максов в&nbsp;коллаборации бренда Nike с&nbsp;известным рэпером. Модель исполнена в&nbsp;нескольких оттенках желтого и&nbsp;поражает разнообразием деталей и&nbsp;материалов. Релиз модели переносился несколько раз, однако теперь модель доступна для заказа в&nbsp;полной размерной сетке. Пара комплектуется дополнительным сетом шнурков темно-коричневого цвета.</p>
+                            <br>
+                            <p>Отличительными особенностями модели Nike Air Max&nbsp;1 Travis Scott Cactus Jack Saturn Gold являются:</p>
+                            <br>
+                            <ul>
+                                <li>&middot; Знаменитый дизайн в&nbsp;стиле ретро</li>
+                                <li>&middot; Дополнительный комплект шнурков</li>
+                                <li>&middot; Ограниченный тираж</li>
+                                <li>&middot; Огромная популярность</li>
+                            </ul>
+                            <br>
+                            <p>
+                                Кроссовки Nike Air Max&nbsp;1 Travis Scott Cactus Jack Saturn Gold являются лимитированными и&nbsp;выпущены ограниченным тиражом. Команда профессионалов сервиса yeezysales.ru накопила огромный опыт на&nbsp;рынке оригинальных лимитированных кроссовок, благодаря которому предоставляет возможность нашим клиентам купить Nike Air Max&nbsp;1 Travis Scott Cactus Jack Saturn Gold с&nbsp;бесплатной экспресс-доставкой до&nbsp;двери.
+                            Мы&nbsp;гарантируем оригинальность наших товаров и&nbsp;будем рады доставить для вас эксклюзивную модель.
+                            Мы гарантируем оригинальность наших товаров и будем рады доставить для вас эксклюзивную модель.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews__container container">
+                    <div class="reviews__content">
+                        <div class="reviews__title">Фото покупателей</div>
+                        <div class="reviews-slider swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="reviews-slider__wrapper swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews-slider__image">
+                                    <img src="./img/reviews/1.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews-slider__image">
+                                    <img src="./img/reviews/1.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews-slider__image">
+                                    <img src="./img/reviews/1.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews-slider__image">
+                                    <img src="./img/reviews/1.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews-slider__image">
+                                    <img src="./img/reviews/1.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews-slider__image">
+                                    <img src="./img/reviews/1.svg" alt="">
+                                </div>
+                              </div>
+                              <div class="reviews-slider__slide swiper-slide">
+                                <div class="reviews-slider__image">
+                                    <img src="./img/reviews/1.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            <section class="similar-products">
+                <div class="similar-products__container container">
+                    <div class="similar-products__content">
+                        <div class="similar-products__title">Похожие товары</div>
+                        <!-- Slider main container -->
+                        <div class="similar-products-slider swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="similar-products__wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                <a href="" class="similar-products-slide__wrapper">
+                                    <div class="similar-products-slide__image">
+                                        <img src="./img/products/2.svg" alt="">
+                                    </div>
+                                    <div class="similar-products-slide__info">
+                                        <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                        <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>110 990 руб.</i> 122 990 руб.</div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="similar-products__slide swiper-slide similar-products-slide">
+                                    <a href="" class="similar-products-slide__wrapper">
+                                        <div class="similar-products-slide__image">
+                                            <img src="./img/products/2.svg" alt="">
+                                        </div>
+                                        <div class="similar-products-slide__info">
+                                            <div class="similar-products-slide__price"><i>122 990 руб.</i></div>
+                                            <div class="similar-products-slide__text">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer lock-padding'">
+            <div class="container">
+                <div class="footer__items">
+                    <div class="footer__item item-footer">
+                        <img src="./img/logo-big.svg" alt="" class="item-footer__logo">
+                        <div class="item-footer__title">Контакты</div>
+                        <ul class="item-footer__list">
+                            <li><div class="item-footer__text">ИП Иванов Иван Иванович</div></li>
+                            <li>
+                                <div class="item-footer__text">ИНН: 553259888352. ОГРНИП: 43785349292577. Российская Федерация, Москва</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item item-footer">
+                        <div class="item-footer__title">О компании</div>
+                        <ul class="item-footer__list">
+                            <li><a href="" class="item-footer__link">Обратная связь</a></li>
+                            <li><a href="" class="item-footer__link">О нас</a></li>
+                            <li><a href="" class="item-footer__link">Политика конфиденциальности</a></li>
+                            <li><a href="" class="item-footer__link">Пользовательское соглашение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item item-footer">
+                        <div class="item-footer__title">Социальные сети</div>
+                        <ul class="item-footer__list">
+                            <li><a href="" class="item-footer__link">ВКонтакте</a></li>
+                            <li><a href="" class="item-footer__link">Instagram</a></li>
+                            <li><a href="" class="item-footer__link">Telegram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item item-footer">
+                        <div class="item-footer__title">Подарочные карты</div>
+                        <ul class="item-footer__list">
+                            <li><a href="" class="item-footer__link">Электронные подарочные карты</a></li>
+                            <li><a href="" class="item-footer__link">Физические подарочные карты</a></li>
+                            <li><a href="" class="item-footer__link">Проверить свой баланс</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item item-footer">
+                        <div class="item-footer__title">Бренды</div>
+                        <ul class="item-footer__list">
+                            <li><a href="" class="item-footer__link">Adidas</a></li>
+                            <li><a href="" class="item-footer__link">Jordan</a></li>
+                            <li><a href="" class="item-footer__link">New Balance</a></li>
+                            <li><a href="" class="item-footer__link">Nike</a></li>
+                            <li><a href="" class="item-footer__link">Puma</a></li>
+                            <li><a href="" class="item-footer__link">Vans</a></li>
+                            <li><a href="" class="item-footer__link">Все бренды</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__copy">&copy;&nbsp;Poizonik, 2022</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="popup-size" class="popup-size popup open">
+        <div class="popup-size__body popup__body">
+            <div class="popup-size__content popup__content">
+                <a href="#" class="popup-size__close popup__close _icon-cross close-popup"></a>
+                <div class="popup-size__tables">
+                    <div class="popup-size__item"> 
+                        <div class="popup-size__gender gender-popup-size">
+                            <div class="gender-popup-size__item gender-popup-size__item-man">Мужские</div>
+                        </div>
+                        <div class="popup-size__table table-popup-size">
+                            <div class="table-popup-size__title">EU</div>
+                            <div class="table-popup-size__title">RUS</div>
+                            <div class="table-popup-size__title">US</div>
+                            <div class="table-popup-size__title">UK</div>
+                            <div class="table-popup-size__title">CM</div>
+    
+                            <div class="table-popup-size__item">38.5</div>
+                            <div class="table-popup-size__item">37.6</div>
+                            <div class="table-popup-size__item">6</div>
+                            <div class="table-popup-size__item">5.5</div>
+                            <div class="table-popup-size__item">24</div>
+    
+                            <div class="table-popup-size__item">39</div>
+                            <div class="table-popup-size__item">38</div>
+                            <div class="table-popup-size__item">6.5</div>
+                            <div class="table-popup-size__item">6</div>
+                            <div class="table-popup-size__item">24.5</div>
+    
+                            <div class="table-popup-size__item">40</div>
+                            <div class="table-popup-size__item">39</div>
+                            <div class="table-popup-size__item">7</div>
+                            <div class="table-popup-size__item">6</div>
+                            <div class="table-popup-size__item">25</div>
+    
+                            <div class="table-popup-size__item">40.5</div>
+                            <div class="table-popup-size__item">39.5</div>
+                            <div class="table-popup-size__item">7.5</div>
+                            <div class="table-popup-size__item">6.5</div>
+                            <div class="table-popup-size__item">25.5</div>
+    
+                            <div class="table-popup-size__item">41</div>
+                            <div class="table-popup-size__item">40</div>
+                            <div class="table-popup-size__item">8</div>
+                            <div class="table-popup-size__item">7</div>
+                            <div class="table-popup-size__item">26</div>
+    
+                            <div class="table-popup-size__item">42</div>
+                            <div class="table-popup-size__item">41</div>
+                            <div class="table-popup-size__item">8.5</div>
+                            <div class="table-popup-size__item">7.5</div>
+                            <div class="table-popup-size__item">26.5</div>
+    
+                            <div class="table-popup-size__item">42.5</div>
+                            <div class="table-popup-size__item">41.5</div>
+                            <div class="table-popup-size__item">9</div>
+                            <div class="table-popup-size__item">8</div>
+                            <div class="table-popup-size__item">27</div>
+                            
+                            <div class="table-popup-size__item">43</div>
+                            <div class="table-popup-size__item">42</div>
+                            <div class="table-popup-size__item">9.5</div>
+                            <div class="table-popup-size__item">8.5</div>
+                            <div class="table-popup-size__item">27.5</div>
+    
+                            <div class="table-popup-size__item">44</div>
+                            <div class="table-popup-size__item">43</div>
+                            <div class="table-popup-size__item">10</div>
+                            <div class="table-popup-size__item">9</div>
+                            <div class="table-popup-size__item">28</div>
+    
+                            <div class="table-popup-size__item">44.5</div>
+                            <div class="table-popup-size__item">43.5</div>
+                            <div class="table-popup-size__item">10.5</div>
+                            <div class="table-popup-size__item">9.5</div>
+                            <div class="table-popup-size__item">28.5</div>
+    
+                            <div class="table-popup-size__item">45</div>
+                            <div class="table-popup-size__item">44</div>
+                            <div class="table-popup-size__item">11</div>
+                            <div class="table-popup-size__item">10</div>
+                            <div class="table-popup-size__item">29</div>
+    
+                            <div class="table-popup-size__item">45.5</div>
+                            <div class="table-popup-size__item">44.5</div>
+                            <div class="table-popup-size__item">11.5</div>
+                            <div class="table-popup-size__item">10.5</div>
+                            <div class="table-popup-size__item">29.5</div>
+    
+                            <div class="table-popup-size__item">46</div>
+                            <div class="table-popup-size__item">45</div>
+                            <div class="table-popup-size__item">12</div>
+                            <div class="table-popup-size__item">11</div>
+                            <div class="table-popup-size__item">30</div>
+    
+                            <div class="table-popup-size__item">47</div>
+                            <div class="table-popup-size__item">45.5</div>
+                            <div class="table-popup-size__item">12.5</div>
+                            <div class="table-popup-size__item">11.5</div>
+                            <div class="table-popup-size__item">30.5</div>
+    
+                            <div class="table-popup-size__item">47.5</div>
+                            <div class="table-popup-size__item">46</div>
+                            <div class="table-popup-size__item">13</div>
+                            <div class="table-popup-size__item">12</div>
+                            <div class="table-popup-size__item">31</div>
+    
+                            <div class="table-popup-size__item">48</div>
+                            <div class="table-popup-size__item">47</div>
+                            <div class="table-popup-size__item">13.5</div>
+                            <div class="table-popup-size__item">12.5</div>
+                            <div class="table-popup-size__item">31.5</div>
+                        </div>
+                    </div>
+                    <div class="popup-size__item">
+                        <div class="popup-size__gender gender-popup-size">
+                            <div class="gender-popup-size__item gender-popup-size__item-woman">Женские</div>
+                        </div>
+                        <div class="popup-size__table table-popup-size">
+                            <div class="table-popup-size__title">EU</div>
+                            <div class="table-popup-size__title">RUS</div>
+                            <div class="table-popup-size__title">US</div>
+                            <div class="table-popup-size__title">UK</div>
+                            <div class="table-popup-size__title">CM</div>
+    
+                            <div class="table-popup-size__item">35.5</div>
+                            <div class="table-popup-size__item">34.5</div>
+                            <div class="table-popup-size__item">5</div>
+                            <div class="table-popup-size__item">2.5</div>
+                            <div class="table-popup-size__item">22</div>
+    
+                            <div class="table-popup-size__item">36</div>
+                            <div class="table-popup-size__item">35</div>
+                            <div class="table-popup-size__item">5.5</div>
+                            <div class="table-popup-size__item">3</div>
+                            <div class="table-popup-size__item">22.5</div>
+    
+                            <div class="table-popup-size__item">36.5</div>
+                            <div class="table-popup-size__item">35.5</div>
+                            <div class="table-popup-size__item">6</div>
+                            <div class="table-popup-size__item">3.5</div>
+                            <div class="table-popup-size__item">23</div>
+    
+                            <div class="table-popup-size__item">37.5</div>
+                            <div class="table-popup-size__item">36.5</div>
+                            <div class="table-popup-size__item">6.5</div>
+                            <div class="table-popup-size__item">4</div>
+                            <div class="table-popup-size__item">23.5</div>
+    
+                            <div class="table-popup-size__item">38</div>
+                            <div class="table-popup-size__item">37</div>
+                            <div class="table-popup-size__item">7</div>
+                            <div class="table-popup-size__item">4.5</div>
+                            <div class="table-popup-size__item">24</div>
+    
+                            <div class="table-popup-size__item">38.5</div>
+                            <div class="table-popup-size__item">37.5</div>
+                            <div class="table-popup-size__item">7.5</div>
+                            <div class="table-popup-size__item">5</div>
+                            <div class="table-popup-size__item">24.5</div>
+    
+                            <div class="table-popup-size__item">39</div>
+                            <div class="table-popup-size__item">38</div>
+                            <div class="table-popup-size__item">8</div>
+                            <div class="table-popup-size__item">5.5</div>
+                            <div class="table-popup-size__item">25</div>
+                            
+                            <div class="table-popup-size__item">40</div>
+                            <div class="table-popup-size__item">39</div>
+                            <div class="table-popup-size__item">8.5</div>
+                            <div class="table-popup-size__item">6</div>
+                            <div class="table-popup-size__item">25.5</div>
+    
+                            <div class="table-popup-size__item">40.5</div>
+                            <div class="table-popup-size__item">39.5</div>
+                            <div class="table-popup-size__item">9</div>
+                            <div class="table-popup-size__item">6.5</div>
+                            <div class="table-popup-size__item">26</div>
+    
+                            <div class="table-popup-size__item">41</div>
+                            <div class="table-popup-size__item">40</div>
+                            <div class="table-popup-size__item">9.5</div>
+                            <div class="table-popup-size__item">7</div>
+                            <div class="table-popup-size__item">26.5</div>
+    
+                            <div class="table-popup-size__item">42</div>
+                            <div class="table-popup-size__item">41</div>
+                            <div class="table-popup-size__item">10</div>
+                            <div class="table-popup-size__item">7.5</div>
+                            <div class="table-popup-size__item">27</div>
+    
+                            <div class="table-popup-size__item">42.5</div>
+                            <div class="table-popup-size__item">41.5</div>
+                            <div class="table-popup-size__item">10.5</div>
+                            <div class="table-popup-size__item">8</div>
+                            <div class="table-popup-size__item">27.5</div>
+    
+                            <div class="table-popup-size__item">43</div>
+                            <div class="table-popup-size__item">42</div>
+                            <div class="table-popup-size__item">11</div>
+                            <div class="table-popup-size__item">8.5</div>
+                            <div class="table-popup-size__item">28</div>
+    
+                            <div class="table-popup-size__item">44</div>
+                            <div class="table-popup-size__item">43</div>
+                            <div class="table-popup-size__item">11.5</div>
+                            <div class="table-popup-size__item">9</div>
+                            <div class="table-popup-size__item">28.5</div>
+    
+                            <div class="table-popup-size__item">44.5</div>
+                            <div class="table-popup-size__item">43.5</div>
+                            <div class="table-popup-size__item">12</div>
+                            <div class="table-popup-size__item">9.5</div>
+                            <div class="table-popup-size__item">29</div>
+    
+                            <div class="table-popup-size__item">45.5</div>
+                            <div class="table-popup-size__item">44.5</div>
+                            <div class="table-popup-size__item">13</div>
+                            <div class="table-popup-size__item">10.5</div>
+                            <div class="table-popup-size__item">30</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-size__descr">
+                    RUS размер - не представлен в размерной сетки производителя, поэтому переводится по ГОСТу
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="popup-size" class="popup-size popup open">
+        <div class="popup-size__body popup__body">
+            <div class="popup-size__content popup__content">
+                <a href="#" class="popup-size__close popup__close _icon-cross close-popup"></a>
+                <div class="popup-size__gender gender-popup-size">
+                    <div class="gender-popup-size__item gender-popup-size__item-man">Мужские</div>
+                    <div class="gender-popup-size__item gender-popup-size__item-woman">Женские</div>
+                </div>
+                <div class="popup-size__tables">
+                    <table class="popup-size__table table-popup-size">
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__title">EU</td>
+                            <td class="table-popup-size__cell table-popup-size__title">RUS</td>
+                            <td class="table-popup-size__cell table-popup-size__title">US</td>
+                            <td class="table-popup-size__cell table-popup-size__title">UK</td>
+                            <td class="table-popup-size__cell table-popup-size__title">CM</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__title">EU</td>
+                            <td class="table-popup-size__cell table-popup-size__title">RUS</td>
+                            <td class="table-popup-size__cell table-popup-size__title">US</td>
+                            <td class="table-popup-size__cell table-popup-size__title">UK</td>
+                            <td class="table-popup-size__cell table-popup-size__title">CM</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">38.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">37.6</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6</td>
+                            <td class="table-popup-size__cell table-popup-size__item">5.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">24</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">35.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">34.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">2.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">22</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">39</td>
+                            <td class="table-popup-size__cell table-popup-size__item">38</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6</td>
+                            <td class="table-popup-size__cell table-popup-size__item">24.5</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">36</td>
+                            <td class="table-popup-size__cell table-popup-size__item">35</td>
+                            <td class="table-popup-size__cell table-popup-size__item">5.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">3</td>
+                            <td class="table-popup-size__cell table-popup-size__item">22.5</td>
+                        </tr>   
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">40</td>
+                            <td class="table-popup-size__cell table-popup-size__item">39</td>
+                            <td class="table-popup-size__cell table-popup-size__item">7</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6</td>
+                            <td class="table-popup-size__cell table-popup-size__item">25</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">36.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">35.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6</td>
+                            <td class="table-popup-size__cell table-popup-size__item">3.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">23</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">40.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">39.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">7.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">25.5</td>
+                            <td class="table-popup-size__cell"></td>        
+                            <td class="table-popup-size__cell table-popup-size__item">37.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">36.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">4</td>
+                            <td class="table-popup-size__cell table-popup-size__item">23.5</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">41</td>
+                            <td class="table-popup-size__cell table-popup-size__item">40</td>
+                            <td class="table-popup-size__cell table-popup-size__item">8</td>
+                            <td class="table-popup-size__cell table-popup-size__item">7</td>
+                            <td class="table-popup-size__cell table-popup-size__item">26</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">38</td>
+                            <td class="table-popup-size__cell table-popup-size__item">37</td>
+                            <td class="table-popup-size__cell table-popup-size__item">7</td>
+                            <td class="table-popup-size__cell table-popup-size__item">4.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">24</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">42</td>
+                            <td class="table-popup-size__cell table-popup-size__item">41</td>
+                            <td class="table-popup-size__cell table-popup-size__item">8.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">7.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">26.5</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">38.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">37.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">7.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">24.5</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">42.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">41.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">9</td>
+                            <td class="table-popup-size__cell table-popup-size__item">8</td>
+                            <td class="table-popup-size__cell table-popup-size__item">27</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">39</td>
+                            <td class="table-popup-size__cell table-popup-size__item">38</td>
+                            <td class="table-popup-size__cell table-popup-size__item">8</td>
+                            <td class="table-popup-size__cell table-popup-size__item">5.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">25</td>
+                        </tr>
+                        
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">43</td>
+                            <td class="table-popup-size__cell table-popup-size__item">42</td>
+                            <td class="table-popup-size__cell table-popup-size__item">9.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">8.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">27.5</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">40</td>
+                            <td class="table-popup-size__cell table-popup-size__item">39</td>
+                            <td class="table-popup-size__cell table-popup-size__item">8.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6</td>
+                            <td class="table-popup-size__cell table-popup-size__item">25.5</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">44</td>
+                            <td class="table-popup-size__cell table-popup-size__item">43</td>
+                            <td class="table-popup-size__cell table-popup-size__item">10</td>
+                            <td class="table-popup-size__cell table-popup-size__item">9</td>
+                            <td class="table-popup-size__cell table-popup-size__item">28</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">40.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">39.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">9</td>
+                            <td class="table-popup-size__cell table-popup-size__item">6.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">26</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">44.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">43.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">10.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">9.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">28.5</td>
+                            <td class="table-popup-size__cell"></td>                 
+                            <td class="table-popup-size__cell table-popup-size__item">41</td>
+                            <td class="table-popup-size__cell table-popup-size__item">40</td>
+                            <td class="table-popup-size__cell table-popup-size__item">9.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">7</td>
+                            <td class="table-popup-size__cell table-popup-size__item">26.5</td>                 
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">45</td>
+                            <td class="table-popup-size__cell table-popup-size__item">44</td>
+                            <td class="table-popup-size__cell table-popup-size__item">11</td>
+                            <td class="table-popup-size__cell table-popup-size__item">10</td>
+                            <td class="table-popup-size__cell table-popup-size__item">29</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">42</td>
+                            <td class="table-popup-size__cell table-popup-size__item">41</td>
+                            <td class="table-popup-size__cell table-popup-size__item">10</td>
+                            <td class="table-popup-size__cell table-popup-size__item">7.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">27</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">45.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">44.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">11.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">10.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">29.5</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">42.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">41.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">10.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">8</td>
+                            <td class="table-popup-size__cell table-popup-size__item">27.5</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">46</td>
+                            <td class="table-popup-size__cell table-popup-size__item">45</td>
+                            <td class="table-popup-size__cell table-popup-size__item">12</td>
+                            <td class="table-popup-size__cell table-popup-size__item">11</td>
+                            <td class="table-popup-size__cell table-popup-size__item">30</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">43</td>
+                            <td class="table-popup-size__cell table-popup-size__item">42</td>
+                            <td class="table-popup-size__cell table-popup-size__item">11</td>
+                            <td class="table-popup-size__cell table-popup-size__item">8.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">28</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">47</td>
+                            <td class="table-popup-size__cell table-popup-size__item">45.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">12.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">11.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">30.5</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">44</td>
+                            <td class="table-popup-size__cell table-popup-size__item">43</td>
+                            <td class="table-popup-size__cell table-popup-size__item">11.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">9</td>
+                            <td class="table-popup-size__cell table-popup-size__item">28.5</td>
+
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">47.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">46</td>
+                            <td class="table-popup-size__cell table-popup-size__item">13</td>
+                            <td class="table-popup-size__cell table-popup-size__item">12</td>
+                            <td class="table-popup-size__cell table-popup-size__item">31</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">44.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">43.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">12</td>
+                            <td class="table-popup-size__cell table-popup-size__item">9.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">29</td>
+                        </tr>
+
+                        <tr class="table-popup-size__row">
+                            <td class="table-popup-size__cell table-popup-size__item">48</td>
+                            <td class="table-popup-size__cell table-popup-size__item">47</td>
+                            <td class="table-popup-size__cell table-popup-size__item">13.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">12.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">31.5</td>
+                            <td class="table-popup-size__cell"></td>
+                            <td class="table-popup-size__cell table-popup-size__item">45.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">44.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">13</td>
+                            <td class="table-popup-size__cell table-popup-size__item">10.5</td>
+                            <td class="table-popup-size__cell table-popup-size__item">30</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="popup-size__descr">
+                    RUS размер - не представлен в размерной сетки производителя, поэтому переводится по ГОСТу
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="popup-cart" class="popup-cart popup">
+        <div class="popup-cart__body popup__body">
+            <div class="popup-cart__content popup__content">
+                <a href="#" class="popup-cart__close popup__close _icon-cross close-popup"></a>
+                <div class="popup-cart__title">Товар успешно добавлен в корзину!</div>
+                <div class="popup-cart__product">
+                    <div class="popup-cart__image">
+                        <img src="./img/products/1.svg" alt="">
+                    </div>
+                    <div class="popup-cart__info">
+                        <div class="popup-cart__name">
+                            Кроссовки Travis Scott x Nike Air Max 1 Saturn Gold
+                        </div>
+                        <div class="popup-cart__size">43 (RUS)</div>
+                        <div class="popup-cart__management">
+                            <div class="popup-cart__quantity quantity-popup-cart">
+                                <i class="quantity-popup-cart__reduce">-</i> 1 <i class="quantity-popup-cart__increase">+</i>
+                            </div>
+                            <div class="popup-cart__price"><i>34 990</i> руб.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-cart__buttons">
+                    <a href="" class="popup-cart__button popup-cart__button-continue">Продолжить покупки</a>
+                    <a href="" class="popup-cart__button popup-cart__button-cart">Перейти в корзину</a>
+                    <a href="" class="popup-cart__button popup-cart__button-buy">Купить сейчас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
