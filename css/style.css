@@ -1546,6 +1546,9 @@ body.ie .ibg img {
     margin: 0 auto 20px auto;
     max-width: 145px;
   }
+  .product__price {
+    text-align: center;
+  }
 }
 @media (max-width: 991.98px) {
   .product__content {
