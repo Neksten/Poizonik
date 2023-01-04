@@ -2712,3 +2712,34 @@ body.ie .ibg img {
 .swiper-button-next {
   color: #000;
 }
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3px;
+     -moz-column-gap: 3px;
+          column-gap: 3px;
+  padding: 35px 0 0 0;
+}
+@media (max-width: 991.98px) {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+.breadcrumb-item {
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+}
+.breadcrumb-item > a {
+  color: #000;
+}
+.breadcrumb-item:not(:first-child)::before {
+  padding: 0 0 0 3px;
+  content: "/";
+  position: relative;
+  top: 0;
+  left: -3px;
+}

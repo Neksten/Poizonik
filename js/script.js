@@ -11,7 +11,8 @@ const screenWidth = window.screen.width
 const screenHeight = window.screen.height
 
 // Burger
-iconMenu.addEventListener('click', () => {
+iconMenu.addEventListener('click', burger)
+function burger() {
     menu.classList.toggle('_active');
     headerGender.classList.toggle('_active');
     menuHeroItem.classList.toggle('_active');
@@ -43,8 +44,7 @@ iconMenu.addEventListener('click', () => {
         iconMenu.innerHTML = `<img src="./img/icons/burger.svg" alt="" oncontextmenu="return false">`;
         closeMenu()
     }
-})
-
+}
 // Menu burger
 menuLinks.forEach(menuLink => {
     const subMenu = menuLink.parentElement.querySelector('.menu__list-submenu');
@@ -117,12 +117,14 @@ if (!!formDiscountCheckbox) {
 
 // Выбрать тип размерной сетки rus eu...
 const sizeProductInfoGrid = document.querySelector('.size-info-grid-product__sizes')
-sizeProductInfoGrid.querySelectorAll('i').forEach(size => {
-    size.addEventListener('click', function () {
-        activeLogic(sizeProductInfoGrid.querySelectorAll('i'))
-        size.classList.add('_active')
+if (sizeProductInfoGrid) {
+    sizeProductInfoGrid.querySelectorAll('i').forEach(size => {
+        size.addEventListener('click', function () {
+            activeLogic(sizeProductInfoGrid.querySelectorAll('i'))
+            size.classList.add('_active')
+        })
     })
-})
+}
 
 function activeLogic(array) {
     array.forEach(item => {
@@ -130,4 +132,46 @@ function activeLogic(array) {
             item.classList.remove('_active')
         }
     })
+}
+
+// Закрыть меню по свайпу
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+const sensitivity = 10;
+
+let x1 = null;
+let y1 = null;
+
+function handleTouchStart(event) {
+    if (menu.classList.contains('_active')) {
+        const firstTouch = event.touches[0];
+        x1 = firstTouch.clientX;
+        y1 = firstTouch.clientY;
+    }
+}
+function handleTouchMove(event) {
+    if (menu.classList.contains('_active')) {
+        // если координата не изменилась
+        if (!x1 || !y1) {
+            return false;
+        }
+        let x2 = event.touches[0].clientX;
+        let y2 = event.touches[0].clientY;
+        let xDiff = x2 - x1;
+        let yDiff = y2 - y1;
+
+        if (Math.abs(xDiff) > Math.abs(yDiff)) {
+            if (xDiff < 0 && Math.abs(xDiff) >= sensitivity) {
+                burger()
+            }
+            //else console.log('left');
+        }
+        // else {
+        //     if (yDiff > 0) console.log('down');
+        //     else console.log('top');
+        // }
+    }
+    x1 = null;
+    y1 = null;
 }
