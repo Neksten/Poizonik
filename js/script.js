@@ -11,7 +11,7 @@ const screenWidth = window.screen.width
 const screenHeight = window.screen.height
 
 // Burger
-iconMenu.addEventListener('click', burger)
+iconMenu.addEventListener('click', burger);
 function burger() {
     menu.classList.toggle('_active');
     headerGender.classList.toggle('_active');
@@ -116,15 +116,15 @@ if (!!formDiscountCheckbox) {
 
 
 // Выбрать тип размерной сетки rus eu...
-const sizeProductInfoGrid = document.querySelector('.size-info-grid-product__sizes')
-if (sizeProductInfoGrid) {
-    sizeProductInfoGrid.querySelectorAll('i').forEach(size => {
-        size.addEventListener('click', function () {
-            activeLogic(sizeProductInfoGrid.querySelectorAll('i'))
-            size.classList.add('_active')
-        })
-    })
-}
+// const sizeProductInfoGrid = document.querySelector('.size-info-grid-product__sizes')
+// if (sizeProductInfoGrid) {
+//     sizeProductInfoGrid.querySelectorAll('i').forEach(size => {
+//         size.addEventListener('click', function () {
+//             activeLogic(sizeProductInfoGrid.querySelectorAll('i'))
+//             size.classList.add('_active')
+//         })
+//     })
+// }
 
 function activeLogic(array) {
     array.forEach(item => {
@@ -174,4 +174,35 @@ function handleTouchMove(event) {
     }
     x1 = null;
     y1 = null;
+}
+
+// ИЗБРАННОЕ
+const favourites = document.querySelectorAll('._favourites');
+
+favourites.forEach(favourite => {
+    favourite.addEventListener('click', function() {
+        this.classList.toggle('_active');
+    })
+})
+
+// счётчики корзина
+const countCarts = document.querySelectorAll('.count-cart');
+
+if (countCarts) {
+    countCarts.forEach(cart => {
+        const countCartReduce = cart.querySelector('.count-cart__reduce');
+        const countCartIncrease = cart.querySelector('.count-cart__increase');
+        const countCartCount = cart.querySelector('.count-cart__count');
+        
+        countCartReduce.addEventListener('click', () => {
+            if (Number(countCartCount.textContent) !== 0) {
+                countCartCount.textContent = Number(countCartCount.textContent) - 1;
+            }
+        }) 
+        countCartIncrease.addEventListener('click', () => {
+            if (Number(countCartCount.textContent) <= 100) {
+                countCartCount.textContent = Number(countCartCount.textContent) + 1;
+            }
+        }) 
+    })
 }
