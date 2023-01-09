@@ -3417,7 +3417,7 @@ body.ie .ibg img {
   right: 10px;
   width: 17px;
   height: 10px;
-  background: url("./../../img/icons/arrow-down.svg") no-repeat;
+  background: url("./../img/icons/arrow-down.svg") no-repeat;
 }
 .item-form-personal__month._active {
   -webkit-transition: all 0.3s ease 0s;
