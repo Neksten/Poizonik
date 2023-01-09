@@ -82,83 +82,92 @@
             </div>
             <div class="header__lk-menu-vertical">Личный кабинет</div>
         </header>
-        <main class="page page-cart">
-            <section class="cart">
-                <div class="container cart__container">
-                    <div class="cart__content">
-                        <div class="cart__info">
-                            <div class="cart__title">КОРЗИНА</div>
-                            <div class="cart__products">
-                                <div class="cart__product product-cart">
-                                    <a href="#" class="product-cart__image">
-                                        <img src="./img/products/1.svg" alt="">
-                                    </a>
-                                    <div class="product-cart__info">
-                                        <div class="product-cart__title">Кроссовки Travis Scott x Nike Air Max 1 Saturn Gold</div>
-                                        <div class="product-cart__favourites _favourites _active _icon-favourites"></div>
-                                        <ul class="product-cart__specifications specifications-product-cart">
-                                            <li class="specifications-product-cart__item"><i>Артикул:</i> DO9392-700</li>
-                                            <li class="specifications-product-cart__item"><i>Бренд:</i> Nike</li>
-                                        </ul>
-                                        <div class="product-cart__management">
-                                            <div class="product-cart__quantity quantity-product-cart count-cart">
-                                                <i class="quantity-product-cart__reduce count-cart__reduce">-</i> <div class="quantity-product__count count-cart__count">1</div> <i class="quantity-product-cart__increase count-cart__increase">+</i>
-                                            </div>
-                                            <div class="product-cart__price"><i>34 990 <div class="product-cart__currency">руб.</div></i><div><div class="line"></div></div></div>
-                                            <div class="product-cart__close">Удалить</div>
+        <main class="page">
+            <section class="personal">
+                <div class="container personal__container">
+                    <div class="personal__content">
+                        <div class="personal__data">
+                            <form action="" class="personal__form form-personal">
+                                <div class="form-personal__item">
+                                    <div class="form-personal__title" id="name">Имя</div>
+                                    <input type="text" class="form-personal__input" placeholder="Введите имя">
+                                </div>
+                                <div class="form-personal__item">
+                                    <div class="form-personal__title">Фамилия</div>
+                                    <input type="text" class="form-personal__input" placeholder="Введите фамилию">
+                                </div>
+                                <div class="form-personal__item">
+                                    <div class="form-personal__title">Отчество</div>
+                                    <input type="text" class="form-personal__input" placeholder="Введите отчество">
+                                </div>
+                                <div class="form-personal__item item-form-personal" id="birth">
+                                    <div class="form-personal__title">Укажите дату рождения</div>
+                                    <div class="item-form-personal__row">
+                                        <input type="text" class="item-form-personal__input" placeholder="День">
+                                        <div class="item-form-personal__month">
+                                            <div class="item-form-personal__title">Месяц</div>
+                                            <ul class="item-form-personal__list">
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Январь</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Февраль</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Март</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Апрель</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Май</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Июнь</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Июль</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Август</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Сентябрь</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Октябрь</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Ноябрь</div></li>
+                                                <li class="item-form-personal__item"><div class="item-form-personal__link">Декабрь</div></li>
+                                            </ul>
                                         </div>
+                                        <input type="text" class="item-form-personal__input" placeholder="Год">
                                     </div>
                                 </div>
-                                <div class="cart__product product-cart">
-                                    <a href="#" class="product-cart__image">
-                                        <img src="./img/products/1.svg" alt="">
-                                    </a>
-                                    <div class="product-cart__info">
-                                        <div class="product-cart__title">Кроссовки Travis Scott x Nike Air Max 1 Saturn Gold</div>
-                                        <div class="product-cart__favourites _favourites _active _icon-favourites"></div>
-                                        <ul class="product-cart__specifications specifications-product-cart">
-                                            <li class="specifications-product-cart__item"><i>Артикул:</i> DO9392-700</li>
-                                            <li class="specifications-product-cart__item"><i>Бренд:</i> Nike</li>
-                                        </ul>
-                                        <div class="product-cart__management">
-                                            <div class="product-cart__quantity quantity-product-cart count-cart">
-                                                <i class="quantity-product-cart__reduce count-cart__reduce">-</i> <div class="quantity-product__count count-cart__count">1</div> <i class="quantity-product-cart__increase count-cart__increase">+</i>
-                                            </div>
-                                            <div class="product-cart__price sale"><i>110 990 <div class="product-cart__currency">руб.</div></i><div>122 990 руб.<div class="line"></div></div></div>
-                                            <div class="product-cart__close">Удалить</div>
-                                        </div>
+                                <div class="form-personal__item">
+                                    <div class="form-personal__title" id="email">Почта</div>
+                                    <input type="text" class="form-personal__input" placeholder="Введите почту">
+                                </div>
+                                <div class="form-personal__item">
+                                    <div class="form-personal__title" id="phone">Телефон</div>
+                                    <input type="text" class="form-personal__input" placeholder="Введите телефон">
+                                </div>
+                            </form>
+                            <div class="personal__title" id="adress">Мои адреса</div>
+                            <div class="personal__addresses">
+                                <div class="personal__address address-personal">
+                                    <div class="address-personal__address">
+                                        <div class="address-personal__basic">Россия, Москва</div>
+                                        <div class="address-personal__info">432044, ул. Хрустальная, д. 35, кв. 115</div>
                                     </div>
+                                    <div class="address-personal__remove">Удалить</div>
                                 </div>
                             </div>
+                            <a href="popup-add-address" class="personal__button popup-link">Добавить адрес +</a>
                         </div>
-                        <nav class="cart__saidbar saidbar-cart">
-                            <div class="saidbar-cart__title">ЗАКАЗАТЬ</div>
-                            <div class="saidbar-cart__content">
-                                <div class="saidbar-cart__info info-saidbar-cart">
-                                    <div class="info-saidbar-cart__quantity">1</div>
-                                    <div class="info-saidbar-cart__text">товар на сумму</div>
-                                    <div class="info-saidbar-cart__price">34 990 руб.</div>
-                                </div>
-                                <div class="saidbar-cart__promocode promocode-saidbar-cart">
-                                    <div class="promocode-saidbar-cart__title">Промокод</div>
-                                    <form action="" class="promocode-saidbar-cart__form">
-                                        <input type="text" placeholder="Введите промокод" class="promocode-saidbar-cart__input">
-                                        <button class="promocode-saidbar-cart__button">ПРИМЕНИТЬ</button>
-                                    </form>
-                                </div>
-                                <div class="saidbar-cart__price price-saidbar-cart">
-                                    <div class="price-saidbar-cart__text">Итого:</div>
-                                    <div class="price-saidbar-cart__count">34 990 руб.</div>
-                                </div>
-                                <div class="saidbar-cart__buttons">
-                                    <a href="" class="saidbar-cart__button">Заказать в один клик</a>
-                                    <a href="" class="saidbar-cart__button">Оформить заказ</a>
-                                </div>
-                            </div>
+                        <nav class="personal__saidbar">
+                            <ul class="personal__list">
+                                <li>
+                                    <a href="#name" class="personal__item">ФИО</a>
+                                </li>
+                                <li>
+                                    <a href="#birth" class="personal__item">Дата рождения</a>
+                                </li>
+                                <li>
+                                    <a href="#email" class="personal__item">Электронная почта</a>
+                                </li>
+                                <li>
+                                    <a href="#phone" class="personal__item">Номер телефона</a>
+                                </li>
+                                <li>
+                                    <a href="#adress" class="personal__item">Адреса</a>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
                 </div>
             </section>
+            
         </main>
         <footer class="footer">
             <div class="container">
@@ -217,7 +226,30 @@
             </div>
         </footer>
     </div>
+    <div id="popup-add-address" class="popup-add-address popup">
+        <div class="popup-add-address__body popup__body">
+            <div class="popup-add-address__content popup__content">
+                <a href="#" class="popup-add-address__close popup__close close-popup"></a>
+                <div class="popup-add-address__title">Добавить адрес</div>
+                <form action="" class="popup-add-address__form form-popup-add-address">
+                    <input type="text" class="form-popup-add-address__input obligatory" placeholder="Город">
+                    <input type="text" class="form-popup-add-address__input obligatory" placeholder="Улица">
+                    <input type="text" class="form-popup-add-address__input obligatory" placeholder="Индекс">
+                    <div class="form-popup-add-address__row">
+                        <input type="text" class="form-popup-add-address__input obligatory" placeholder="Дом">
+                        <input type="text" class="form-popup-add-address__input" placeholder="Корп.">
+                        <input type="text" class="form-popup-add-address__input obligatory" placeholder="Кв.">
+                    </div>
+                    <textarea name="" id="" class="form-popup-add-address__textarea" placeholder="Комментарий"></textarea>
+                    <button class="form-popup-add-address__button">СОХРАНИТЬ</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="./js/cart.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/personal.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

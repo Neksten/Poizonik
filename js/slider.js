@@ -108,3 +108,44 @@ new Swiper('.similar-products-slider', {
         }
     }
 });
+
+// Инициализируем Swiper
+new Swiper('.orders-personal-slider', {
+    // Стрелки
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    slidesPerView: 4.5,
+    // Курсор перетаскивания
+    grabCursor: true,
+    // Управление клавиатурой
+    keyboard: {
+        // Включить\выключить
+        enabled: true,
+        // Включить\выключить только когда слайдер в пределах вьюпорта
+        onlyInViewport: true,
+    },
+    // Скорость
+    speed: 500,
+    // breakpoints: {
+    //     320: {
+    //         slidesPerView: 1,
+    //     },
+    //     480: {
+    //         slidesPerView: 1.6,
+    //     },
+    //     610: {
+    //         slidesPerView: 2.1,
+    //     },
+    //     768: {
+    //         slidesPerView: 2.6,
+    //     },
+    //     992: {
+    //         slidesPerView: 3.5,
+    //     },
+    //     1250: {
+    //         slidesPerView: 4.4,
+    //     }
+    // }
+});

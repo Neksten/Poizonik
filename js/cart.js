@@ -1,9 +1,17 @@
 // saidbar количество товара
 const infoSaidbarCartQuantity = document.querySelector('.info-saidbar-cart__quantity');
 const cartProducts = document.querySelectorAll('.cart__product')
+const infoSaidbarCartText = document.querySelector('.info-saidbar-cart__text');
 
 if (infoSaidbarCartQuantity) {
-    infoSaidbarCartQuantity.textContent = cartProducts.length;
+    let quantity = cartProducts.length;
+    infoSaidbarCartQuantity.textContent =  quantity;
+    infoSaidbarCartText.textContent = `${declOfNum(quantity, ['товар', 'товара', 'товаров'])} на сумму`
+}
+
+// Склонение слова
+function declOfNum(number, words) {  
+    return words[(number % 100 > 4 && number % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(number % 10 < 5) ? Math.abs(number) % 10 : 5]];
 }
 
 // saidbar цена
