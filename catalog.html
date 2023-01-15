@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/iconsfont.css"> -->
+    <link rel="stylesheet" href="./css/nouislider.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Poizonik</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="block-opacity"></div>
+        <header class="header">
+            <div class="header__location">
+                <div class="header__location-text">Москва</div>
+            </div>
+            <div class="header__container container">
+                <div class="header__content">
+                    <div class="menu__icon icon-menu">
+                        <img src="./img/icons/burger.svg" alt="">
+                    </div>
+                    <div class="header__content-left">
+                        <a href="./index.html" class="header__logo">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <div class="header__gender">
+                            <a href="#" class="header__man">Мужчинам</a>
+                            <a href="#" class="header__woman">Женщинам</a>
+                        </div>
+                    </div>
+                    <div class="header__items">
+                        <div class="header__search-box">
+                            <input class="header__search-txt" type="text" name="" placeholder="Поищем?">
+                            <a href="" class="header__search-btn">
+                                <img src="./img/icons/search.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="./personal.html" class="header__item header__item-lk"></a>
+                        <a href="./favourites.html" class="header__item header__item-favourites"></a>
+                        <a href="./cart.html" class="header__item header__item-basket"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu menu">
+                <div class="header__menu-container container">
+                    <nav class="menu__body">
+                        <ul class="menu__list menu__list-left">
+                            <li class="menu__hero-item">
+                                <a href="./index.html" class="menu__link">На главную</a>
+                            </li>
+                            <li><a href="" class="menu__link menu__link-green">Новинки</a></li>
+                            <li>
+                                <a href="./catalog.html" class="menu__link menu__link-category">Обувь</a>
+                                <ul class="menu__list-submenu submenu">
+                                    <li><div class="submenu__link">Кроссовки</div></li>
+                                    <li><div class="submenu__link">Кеды</div></li>
+                                    <li><div class="submenu__link">Ботинки</div></li>
+                                </ul>
+                            </li>
+                            <li><div class="menu__link menu__link-category">Одежда</div></li>
+                            <li><div class="menu__link menu__link-category">Аксессуары</div></li>
+                            <li>
+                                <div class="menu__link menu__link-category">Бренды</div>
+                                <ul class="menu__list-submenu submenu">
+                                    <li><div class="submenu__link">New Balance</div></li>
+                                    <li><div class="submenu__link">Stone Island</div></li>
+                                    <li><div class="submenu__link">Supreme</div></li>
+                                    <li><div class="submenu__link">Adidas</div></li>
+                                    <li><div class="submenu__link">Jordan</div></li>
+                                    <li><div class="submenu__link">Nike</div></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="menu__list menu__list-right">
+                            <li><a href="" class="menu__link">О нас</a></li>
+                            <li><a href="" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <a href="./personal.html" class="header__lk-menu-vertical">Личный кабинет</a>
+        </header>
+        <main class="page">
+            <nav aria-label="breadcrumb">
+                <div class="container breadcrumb__container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                        <li class="breadcrumb-item"><a href="#">Мужчинам</a></li>
+                        <li class="breadcrumb-item"><a href="#">Обувь</a></li>
+                    </ol>
+                </div>
+            </nav>      
+            <section class="catalog">
+                    <div class="catalog__container container">
+                        <div class="catalog__content">
+                            <div class="catalog__title">МУЖСКАЯ ОБУВЬ</div>
+                            <div class="catalog__filters">
+                                <div class="catalog__filter filter-sorting-catalog filter-catalog filter">
+                                    <div class="filter-catalog__button filter-sorting-button filter-button">Сортировать</div>
+                                    <div class="filter-catalog__body filter-body">
+                                        <ul class="filter-catalog__list filter-sorting-catalog__list filter-list">
+                                            <li>
+                                                <div class="filter-catalog__item filter-sorting-catalog__item filter-item">
+                                                    <div class="filter-catalog__checkbox filter-sorting-checkbox">
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+                                                    </div>
+                                                    <div class="filter-catalog__text">По популярности</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-sorting-catalog__item filter-item">
+                                                    <div class="filter-catalog__checkbox filter-sorting-checkbox">
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+                                                    </div>
+                                                    <div class="filter-catalog__text">По возрастанию цены</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-sorting-catalog__item filter-item">
+                                                    <div class="filter-catalog__checkbox filter-sorting-checkbox">
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+                                                    </div>
+                                                    <div class="filter-catalog__text">По убыванию цены</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter filter-catalog filter">
+                                    <div class="filter-catalog__button filter-button">Размер</div>
+                                    <div class="filter-catalog__body filter-body">
+                                        <ul class="filter-catalog__list filter-list">
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-size filter-item">
+                                                    <div class="filter-item-size__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">37</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-size filter-item">
+                                                    <div class="filter-item-size__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">37</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-size filter-item">
+                                                    <div class="filter-item-size__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">37</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-size filter-item">
+                                                    <div class="filter-item-size__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">37</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-size filter-item">
+                                                    <div class="filter-item-size__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">37</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-size filter-item">
+                                                    <div class="filter-item-size__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">37</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity">14</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="" class="filter-catalog__button-apply">Применить</a>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter filter-catalog filter">
+                                    <div class="filter-catalog__button filter-button">Бренд</div>
+                                    <div class="filter-catalog__body filter-body">
+                                        <ul class="filter-catalog__list filter-list">
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-brand filter-item">
+                                                    <div class="filter-item-brand__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">New balance</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity filter-item-brand__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-brand filter-item">
+                                                    <div class="filter-item-brand__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">New balance</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity filter-item-brand__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-brand filter-item">
+                                                    <div class="filter-item-brand__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">New balance</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity filter-item-brand__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-brand filter-item">
+                                                    <div class="filter-item-brand__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">New balance</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity filter-item-brand__quantity">14</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="filter-catalog__item filter-item-brand filter-item">
+                                                    <div class="filter-item-brand__info filter-catalog__info">
+                                                        <div class="filter-catalog__checkbox">
+                                                            <div class=""></div>
+                                                            <div class=""></div>
+                                                        </div>
+                                                        <div class="filter-catalog__text">New balance</div>
+                                                    </div>
+                                                    <div class="filter-catalog__quantity filter-item-brand__quantity">14</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="" class="filter-catalog__button-apply">Применить</a>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter filter-catalog filter">
+                                    <div class="filter-catalog__button filter-button">Цена</div>
+                                    <div class="filter-catalog__body filter-body filter-price">
+                                        <div class="filter-price__slider" id="price-slider-1"></div>
+                                        <div class="filter-price__inputs">
+                                            <label class="filter-price__label">
+                                                <div class="filter-price__text">от</div>
+                                                <input type="number" class="filter-price__input" placeholder="5000 руб." id="filter-price-input-min-1">
+                                            </label>
+                                            <label class="filter-price__label">
+                                                <div class="filter-price__text">до</div>
+                                                <input type="number" class="filter-price__input" placeholder="499999 руб." id="filter-price-input-max-1">
+                                            </label>
+                                        </div>
+                                        <a href="" class="filter-catalog__button-apply">Применить</a>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter catalog__filter-all filter-catalog filter-catalog-all filter">
+                                    <div class="filter-catalog-all__button filter-button">Фильтры</div>
+                                    <div class="filter-catalog-all__content">
+                                        <div class="filter-catalog-all__body filter-body">
+                                            <div class="filter-catalog-all__filters">
+                                                <div class="filter-catalog-all__title">Фильтры</div>
+                                                <div class="filter-catalog-all__close _icon-cross"></div>
+                                                <div class="filter-catalog-all__filters">
+                                                    <div class="filter-catalog-all__filter filter-catalog-all-filter">
+                                                        <div class="filter-catalog-all-filter__button">Размер</div>
+                                                        <div class="filter-catalog-all-filter__body">
+                                                            <div class="filter-catalog-all-filter__sizes">
+                                                                <div class="filter-catalog-all-filter__size">36 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">37 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">38 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">39 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">40 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">41 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">42 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">43 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">44 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">45 EU</div>
+                                                                <div class="filter-catalog-all-filter__size">46 EU</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-catalog-all__filter filter-catalog-all-filter">
+                                                        <div class="filter-catalog-all-filter__button">Бренд</div>
+                                                        <div class="filter-catalog-all-filter__body">
+                                                            <div class="filter-catalog-all-filter__brands">
+                                                                <div class="filter-catalog-all-filter__brand">ANTA</div>
+                                                                <div class="filter-catalog-all-filter__brand">VANS</div>
+                                                                <div class="filter-catalog-all-filter__brand">REEBOK</div>
+                                                                <div class="filter-catalog-all-filter__brand">DR.MARTENS</div>
+                                                                <div class="filter-catalog-all-filter__brand">NIKE</div>
+                                                                <div class="filter-catalog-all-filter__brand">THE NORTH FACE</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="filter-catalog-all__filter filter-catalog-all-filter">
+                                                        <div class="filter-catalog-all-filter__button">Цена</div>
+                                                        <div class="filter-catalog-all-filter-price__body filter-catalog-all-filter__body">
+                                                            <div class="filter-catalog-all-filter-price__slider filter-price__slider" id="price-slider-2"></div>
+                                                            <div class="filter-catalog-all-filter-price__inputs filter-price__inputs">
+                                                                <label class="filter-catalog-all-filter-price__label filter-price__label">
+                                                                    <div class="filter-price__text">от</div>
+                                                                    <input type="number" class="filter-catalog-all-filter-price__input filter-price__input" placeholder="5000 руб." id="filter-price-input-min-2">
+                                                                </label>
+                                                                <label class="filter-price__label">
+                                                                    <div class="filter-price__text">до</div>
+                                                                    <input type="number" class="filter-catalog-all-filter-price__input filter-price__input" placeholder="499999 руб." id="filter-price-input-max-2">
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="filter-catalog-all__buttons">
+                                                <a href="" class="filter-catalog-all__button-filters">Сбросить</a>
+                                                <a href="" class="filter-catalog-all__button-filters">Применить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__products">
+                                <div class="catalog__product product-catalog sale">
+                                    <div class="product-catalog__favourites _favourites _icon-favourites"></div>
+                                    <div class="product-catalog__image">
+                                        <img src="./img/products/2.svg" alt="">
+                                    </div>
+                                    <div class="product-catalog__price sale"><i>110 990 <div class="product-catalog__currency">руб.</div></i><div>122 990 руб.<div class="line"></div></div></div>
+                                    <div class="product-catalog__sizes">
+                                        <div class="product-catalog__size">39</div>
+                                        <div class="product-catalog__size">43</div>
+                                        <div class="product-catalog__size">45</div>
+                                        <div class="product-catalog__size">46</div>
+                                    </div>
+                                    <div class="product-catalog__title">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                </div>
+                                <div class="catalog__product product-catalog">
+                                    <div class="product-catalog__favourites _favourites _icon-favourites"></div>
+                                    <div class="product-catalog__image">
+                                        <img src="./img/products/1.svg" alt="">
+                                    </div>
+                                    <div class="product-catalog__price"><i>34 990 <div class="product-catalog__currency">руб.</div></i><div><div class="line"></div></div></div>
+                                    <div class="product-catalog__sizes">
+                                        <div class="product-catalog__size">39</div>
+                                        <div class="product-catalog__size">43</div>
+                                        <div class="product-catalog__size">45</div>
+                                        <div class="product-catalog__size">46</div>
+                                    </div>
+                                    <div class="product-catalog__title">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                </div>
+                                <div class="catalog__product product-catalog sale">
+                                    <div class="product-catalog__favourites _favourites _icon-favourites"></div>
+                                    <div class="product-catalog__image">
+                                        <img src="./img/products/2.svg" alt="">
+                                    </div>
+                                    <div class="product-catalog__price sale"><i>110 990 <div class="product-catalog__currency">руб.</div></i><div>122 990 руб.<div class="line"></div></div></div>
+                                    <div class="product-catalog__sizes">
+                                        <div class="product-catalog__size">39</div>
+                                        <div class="product-catalog__size">43</div>
+                                        <div class="product-catalog__size">45</div>
+                                        <div class="product-catalog__size">46</div>
+                                    </div>
+                                    <div class="product-catalog__title">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                </div>
+                                <div class="catalog__product product-catalog">
+                                    <div class="product-catalog__favourites _favourites _icon-favourites"></div>
+                                    <div class="product-catalog__image">
+                                        <img src="./img/products/1.svg" alt="">
+                                    </div>
+                                    <div class="product-catalog__price"><i>34 990 <div class="product-catalog__currency">руб.</div></i><div><div class="line"></div></div></div>
+                                    <div class="product-catalog__sizes">
+                                        <div class="product-catalog__size">39</div>
+                                        <div class="product-catalog__size">43</div>
+                                        <div class="product-catalog__size">45</div>
+                                        <div class="product-catalog__size">46</div>
+                                    </div>
+                                    <div class="product-catalog__title">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                </div>
+                                <div class="catalog__product product-catalog sale">
+                                    <div class="product-catalog__favourites _favourites _icon-favourites"></div>
+                                    <div class="product-catalog__image">
+                                        <img src="./img/products/2.svg" alt="">
+                                    </div>
+                                    <div class="product-catalog__price sale"><i>110 990 <div class="product-catalog__currency">руб.</div></i><div>122 990 руб.<div class="line"></div></div></div>
+                                    <div class="product-catalog__sizes">
+                                        <div class="product-catalog__size">39</div>
+                                        <div class="product-catalog__size">43</div>
+                                        <div class="product-catalog__size">45</div>
+                                        <div class="product-catalog__size">46</div>
+                                    </div>
+                                    <div class="product-catalog__title">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                </div>
+                                <div class="catalog__product product-catalog">
+                                    <div class="product-catalog__favourites _favourites _icon-favourites"></div>
+                                    <div class="product-catalog__image">
+                                        <img src="./img/products/1.svg" alt="">
+                                    </div>
+                                    <div class="product-catalog__price"><i>34 990 <div class="product-catalog__currency">руб.</div></i><div><div class="line"></div></div></div>
+                                    <div class="product-catalog__sizes">
+                                        <div class="product-catalog__size">39</div>
+                                        <div class="product-catalog__size">43</div>
+                                        <div class="product-catalog__size">45</div>
+                                        <div class="product-catalog__size">46</div>
+                                    </div>
+                                    <div class="product-catalog__title">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                </div>
+                                <div class="catalog__product product-catalog sale">
+                                    <div class="product-catalog__favourites _favourites _icon-favourites"></div>
+                                    <div class="product-catalog__image">
+                                        <img src="./img/products/2.svg" alt="">
+                                    </div>
+                                    <div class="product-catalog__price sale"><i>110 990 <div class="product-catalog__currency">руб.</div></i><div>122 990 руб.<div class="line"></div></div></div>
+                                    <div class="product-catalog__sizes">
+                                        <div class="product-catalog__size">39</div>
+                                        <div class="product-catalog__size">43</div>
+                                        <div class="product-catalog__size">45</div>
+                                        <div class="product-catalog__size">46</div>
+                                    </div>
+                                    <div class="product-catalog__title">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                </div>
+                                <div class="catalog__product product-catalog">
+                                    <div class="product-catalog__favourites _favourites _icon-favourites"></div>
+                                    <div class="product-catalog__image">
+                                        <img src="./img/products/1.svg" alt="">
+                                    </div>
+                                    <div class="product-catalog__price"><i>34 990 <div class="product-catalog__currency">руб.</div></i><div><div class="line"></div></div></div>
+                                    <div class="product-catalog__sizes">
+                                        <div class="product-catalog__size">39</div>
+                                        <div class="product-catalog__size">43</div>
+                                        <div class="product-catalog__size">45</div>
+                                        <div class="product-catalog__size">46</div>
+                                    </div>
+                                    <div class="product-catalog__title">Кроссовки AIR JORDAN 1 RETRO LOW TRAVIS SCOTT </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__items">
+                    <div class="footer__item item-footer">
+                        <img src="./img/logo-big.svg" alt="" class="item-footer__logo">
+                        <div class="item-footer__title">Контакты</div>
+                        <ul class="item-footer__list">
+                            <li><div class="item-footer__text">ИП Иванов Иван Иванович</div></li>
+                            <li>
+                                <div class="item-footer__text">ИНН: 553259888352. ОГРНИП: 43785349292577. Российская Федерация, Москва</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item item-footer">
+                        <div class="item-footer__title">О компании</div>
+                        <ul class="item-footer__list">
+                            <li><a href="" class="item-footer__link">Обратная связь</a></li>
+                            <li><a href="" class="item-footer__link">О нас</a></li>
+                            <li><a href="" class="item-footer__link">Политика конфиденциальности</a></li>
+                            <li><a href="" class="item-footer__link">Пользовательское соглашение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item item-footer">
+                        <div class="item-footer__title">Социальные сети</div>
+                        <ul class="item-footer__list">
+                            <li><a href="" class="item-footer__link">ВКонтакте</a></li>
+                            <li><a href="" class="item-footer__link">Instagram</a></li>
+                            <li><a href="" class="item-footer__link">Telegram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item item-footer">
+                        <div class="item-footer__title">Подарочные карты</div>
+                        <ul class="item-footer__list">
+                            <li><a href="" class="item-footer__link">Электронные подарочные карты</a></li>
+                            <li><a href="" class="item-footer__link">Физические подарочные карты</a></li>
+                            <li><a href="" class="item-footer__link">Проверить свой баланс</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item item-footer">
+                        <div class="item-footer__title">Бренды</div>
+                        <ul class="item-footer__list">
+                            <li><a href="" class="item-footer__link">Adidas</a></li>
+                            <li><a href="" class="item-footer__link">Jordan</a></li>
+                            <li><a href="" class="item-footer__link">New Balance</a></li>
+                            <li><a href="" class="item-footer__link">Nike</a></li>
+                            <li><a href="" class="item-footer__link">Puma</a></li>
+                            <li><a href="" class="item-footer__link">Vans</a></li>
+                            <li><a href="" class="item-footer__link">Все бренды</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__copy">&copy;&nbsp;Poizonik, 2022</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/catalog.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/range-slider.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

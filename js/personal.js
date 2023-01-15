@@ -118,6 +118,11 @@ for (let anchor of anchors) {
             behavior: "smooth",
             block: "start"
         })
-        iconMenu.classList.toggle('_active');
     })
 }
+
+// Количество заказов
+const ordersPersonalTitle = document.querySelector('.orders-personal__title');
+const ordersPersonalSliderSlides = document.querySelectorAll('.orders-personal-slider__slide');
+
+ordersPersonalTitle.textContent = `Заказы ${ordersPersonalSliderSlides.length}`
