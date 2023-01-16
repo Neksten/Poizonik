@@ -4333,14 +4333,15 @@ body.ie .ibg img {
   row-gap: 10px;
   position: relative;
   padding: 15px 10px;
+  cursor: pointer;
 }
 .product-catalog.sale::after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
-  width: 125px;
-  height: 84px;
+  width: 164px;
+  height: 111px;
   background: url("./../img/icons/sale.svg") no-repeat;
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -4456,9 +4457,6 @@ body.ie .ibg img {
   }
   .product-catalog:hover .product-catalog__favourites {
     opacity: 1;
-  }
-  .product-catalog:hover.sale::after {
-    opacity: 0;
   }
   .product-catalog:hover .product-catalog__sizes {
     opacity: 1;
