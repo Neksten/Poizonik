@@ -138,20 +138,68 @@ if (document.querySelector('.orders-personal-slider'))  {
             320: {
                 slidesPerView: 1,
             },
-            460: {
+            500: {
                 slidesPerView: 1.8,
             },
-            580: {
+            630: {
                 slidesPerView: 2.3,
             },
-            680: {
+            730: {
                 slidesPerView: 2.7,
             },
             850: {
-                slidesPerView: 3.5,
+                slidesPerView: 3.2,
             },
             1250: {
-                slidesPerView: 2.6,
+                slidesPerView: 2.7,
+            }
+        }
+    });  
+}
+
+if (document.querySelector('.popular-slider'))  {
+    // Инициализируем Swiper
+    new Swiper('.popular-slider', {
+        // Стрелки
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        // Курсор перетаскивания
+        grabCursor: true,
+        // Управление клавиатурой
+        keyboard: {
+            // Включить\выключить
+            enabled: true,
+            // Включить\выключить только когда слайдер в пределах вьюпорта
+            onlyInViewport: true,
+        },
+        // Скорость
+        speed: 500,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            500: {
+                slidesPerView: 1.8,
+            },
+            600: {
+                slidesPerView: 2.2,
+            },
+            720: {
+                slidesPerView: 2.7,
+            },
+            860: {
+                slidesPerView: 3.2,
+            },
+            980: {
+                slidesPerView: 3.7,
+            },
+            1110: {
+                slidesPerView: 4.2,
+            },
+            1250: {
+                slidesPerView: 4.7,
             }
         }
     });  
